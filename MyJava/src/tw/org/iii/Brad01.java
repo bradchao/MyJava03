@@ -13,7 +13,7 @@ public class Brad01 {
 	
 	public static void main(String[] brad) {
 		// TODO Auto-generated method stub
-		System.out.println("Hello 2");
+		System.out.println("Hello 3");
 		// abcdefg
 		
 		// XXX ????
