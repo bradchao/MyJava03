@@ -1,5 +1,7 @@
 package tw.org.iii;
 
+import java.util.Arrays;
+
 public class PokerV3 {
 
 	public static void main(String[] args) {
@@ -27,6 +29,8 @@ public class PokerV3 {
 		String[] suits = {"黑桃","紅心","方塊","梅花"}; // suit[0]
 		String[] values = {"A ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10","J ","Q ","K "}; // values[0]
 		for (int[] cards : player){
+			// 理牌
+			Arrays.sort(cards);
 			for (int card : cards){
 				System.out.print(suits[card/13] + values[card%13] +" ");
 			}
