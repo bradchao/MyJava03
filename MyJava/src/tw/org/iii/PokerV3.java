@@ -15,7 +15,7 @@ public class PokerV3 {
 			
 			poker[i] = temp;
 			check[temp] = true;
-			System.out.println(temp);
+			//System.out.println(temp);
 		}
 		// 發牌 => 四個玩家 => 每家有13張
 		int[][] player = new int[4][13];
@@ -24,9 +24,11 @@ public class PokerV3 {
 		}
 		System.out.println("--");
 		// 攤牌
+		String[] suits = {"黑桃","紅心","方塊","梅花"}; // suit[0]
+		String[] values = {"A ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10","J ","Q ","K "}; // values[0]
 		for (int[] cards : player){
 			for (int card : cards){
-				System.out.print(card + "  ");
+				System.out.print(suits[card/13] + values[card%13] +" ");
 			}
 			System.out.println();
 		}
