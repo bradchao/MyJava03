@@ -22,6 +22,12 @@ public class Brad16 {
 		System.out.println(c1);
 		System.out.println("abcdefgh".charAt(3));
 		
+		String a = "abcdefg";
+		System.out.println(a.indexOf('x'));
+		
+		
+		
+		
 		
 		
 		
