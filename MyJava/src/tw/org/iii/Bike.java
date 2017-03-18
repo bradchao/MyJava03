@@ -1,12 +1,13 @@
 package tw.org.iii;
 
-public class Bike {
-	private double speed;
+public class Bike extends Object{
+	double speed;
 	int a;	// a = 0
 	static int counter;	// b = 0
 	
 	Bike(){
 		this(0);
+		System.out.println("Bike()");
 	}
 	Bike(int s){
 		this(s*1f);
