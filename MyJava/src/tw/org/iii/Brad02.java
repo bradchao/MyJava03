@@ -17,6 +17,10 @@ public class Brad02 {
 		double var5 = -15, var6=0;
 		System.out.println(var5 / var6);
 		
+		System.out.println("----");
+		double var8 = 10;
+		//int var7 = var8;
+		//System.out.println(var8);
 		
 		
 		
