@@ -22,3 +22,6 @@ abstract class Brad274 extends Brad271 {
 	void m3(){}
 	abstract void m4();
 }
+abstract class Brad275 {
+	void m1(){}
+}
