@@ -16,13 +16,13 @@ public class TWId extends Object{
 		// super();
 		char f0 = letters.charAt(area);
 		char f1 = isFemale?'2':'1';
-		String temp = "" + f0 + f1;
+		StringBuffer sb = new StringBuffer("" + f0 + f1);
 		for (int i=0; i<7; i++){
-			temp += (int)(Math.random()*10);
+			sb.append((int)(Math.random()*10));
 		}
 		for (int i=0; i<10; i++){
-			if (isCheckOK(temp + i)){
-				id = temp + i;
+			if (isCheckOK(sb.toString() + i)){
+				id = sb.append(i).toString();
 				break;
 			}
 		}
