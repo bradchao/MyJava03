@@ -3,19 +3,40 @@ package tw.org.iii;
 public class Brad45 {
 	public static void main(String[] args) {
 		Bird b1 = new Bird();
+		int n = 4;
 		try{
-			b1.setLeg(2);
+			b1.setLeg(n);
+//		}catch(MyException ee){
+//			System.out.println(ee.toString());
+//		}catch(MyException2 ee){
+//			System.out.println(ee.toString());
 		}catch(Exception ee){
-			b1 = null;
+			
 		}
+		System.out.println("End");
 	}
 }
 class Bird {
 	private int leg;
+	//void setLeg(int n) throws MyException, MyException2 {
 	void setLeg(int n) throws Exception {
-		if (n>2 || n<0){
-			throw new Exception();
+		if (n>2){
+			throw new MyException2();
+		}else if (n<0){
+			throw new MyException();
 		}
 		leg = n;
+	}
+}
+class MyException extends Exception {
+	@Override
+	public String toString() {
+		return "哪有欠人家腳的??";
+	}
+}
+class MyException2 extends Exception {
+	@Override
+	public String toString() {
+		return "變種鳥嗎??";
 	}
 }
